@@ -30,6 +30,21 @@
       justify-content: space-between;
     }
 
+    .token {
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+/* subtle hover */
+.token:hover {
+  background: #263449; /* slightly lighter */
+  transform: translateY(-2px);
+}
+
+/* mobile tap */
+.token:active {
+  transform: scale(0.98);
+}
+
     .rank {
       font-weight: bold;
       color: #22c55e;
