@@ -1,85 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Top Tokens</title>
-  <style>
-    body {
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-
-    h1 {
-      margin-top: 20px;
-    }
-
-    .token-list {
-      max-width: 500px;
-      margin: auto;
-      padding: 0;
-    }
-
-    .token {
-      background: #1e293b;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .token {
-      transition: background 0.2s ease, transform 0.15s ease;
-    }
-
-/* subtle hover */
-.token:hover {
-  background: #263449; /* slightly lighter */
-  transform: translateY(-2px);
-}
-
-/* mobile tap */
-.token:active {
-  transform: scale(0.98);
-}
-
-    .rank {
-      font-weight: bold;
-      color: #22c55e;
-    }
-  </style>
+  <title>Token Board</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>🚀 Top 20 Tokens</h1>
+<h1>🚀 Top Tokens</h1>
 
-<div class="token-list">
+<div id="tokenList" class="grid"></div>
 
-  <!-- Tokens 1 to 20 -->
-  <div class="token"><span class="rank">#1</span> <span>Token A</span></div>
-  <div class="token"><span class="rank">#2</span> <span>Token B</span></div>
-  <div class="token"><span class="rank">#3</span> <span>Token C</span></div>
-  <div class="token"><span class="rank">#4</span> <span>Token D</span></div>
-  <div class="token"><span class="rank">#5</span> <span>Token E</span></div>
-  <div class="token"><span class="rank">#6</span> <span>Token F</span></div>
-  <div class="token"><span class="rank">#7</span> <span>Token G</span></div>
-  <div class="token"><span class="rank">#8</span> <span>Token H</span></div>
-  <div class="token"><span class="rank">#9</span> <span>Token I</span></div>
-  <div class="token"><span class="rank">#10</span> <span>Token J</span></div>
-  <div class="token"><span class="rank">#11</span> <span>Token K</span></div>
-  <div class="token"><span class="rank">#12</span> <span>Token L</span></div>
-  <div class="token"><span class="rank">#13</span> <span>Token M</span></div>
-  <div class="token"><span class="rank">#14</span> <span>Token N</span></div>
-  <div class="token"><span class="rank">#15</span> <span>Token O</span></div>
-  <div class="token"><span class="rank">#16</span> <span>Token P</span></div>
-  <div class="token"><span class="rank">#17</span> <span>Token Q</span></div>
-  <div class="token"><span class="rank">#18</span> <span>Token R</span></div>
-  <div class="token"><span class="rank">#19</span> <span>Token S</span></div>
-  <div class="token"><span class="rank">#20</span> <span>Token T</span></div>
-
-</div>
-
+<script src="app.js"></script>
 </body>
 </html>
