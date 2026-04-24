@@ -1,0 +1,76 @@
+body {
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+}
+
+/* GRID (homepage) */
+.grid {
+  display: grid;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* CARD */
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  background: #263449;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* PRICE */
+.price {
+  margin-left: auto;
+}
+
+.positive { color: #22c55e; }
+.negative { color: #ef4444; }
+
+/* DETAIL PAGE */
+.detail {
+  padding: 15px;
+}
+
+.chart {
+  background: #020617;
+  height: 200px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* LINKS */
+.links {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart {
+    height: 300px;
+  }
+}
